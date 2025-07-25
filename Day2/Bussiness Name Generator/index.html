@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bussiness Name Generator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Bussiness Name Generator !!</h1>
+    </div>
+    
+    <div class="checkboxes">
+        <h5>Select words for your bussiness</h5>
+        <div class="checks">
+            <h5>Select the niche of your bussiness </h5>
+            <div class="niche_check">
+                <input type="radio" name="niche" value="tech"><label for="tech" >Technical / StartUp </label><br>
+                <input type="radio" name="niche" value="life" ><label for="life" >Lifestyle / Chill / Creative </label><br>
+                <input type="radio" name="niche" value="bussiness"><label for="bussiness">Bussiness / FinTech / Consulting</label><br>
+                
+            </div>
+            <button id="give_words" onclick="generate_words()">Generate words</button>
+
+            <div id="tech_words">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="tech" value="Cloud">Cloud</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="tech" value="Tech">Tech</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="tech" value="Spark">Spark</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="tech" value="Hub">Hub</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="tech" value="Core">Core</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="tech" value="Forge">Forge</label></td>
+                    </tr>
+                </table>
+                <button id="Generate_names">Generate Names</button>
+            </div>
+            <div id="life_words">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="life" value="Dream">Dream</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="life" value="Bean">Bean</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="life" value="Vibe">Vibe</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="life" value="Moon">Moon</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="life" value="Space">Space</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="life" value="Light">Light</label></td>
+                    </tr>
+                </table>
+                <button id="Generate_names">Generate Names</button>
+
+            </div>
+              <div id="Bussiness_words">
+                   <table>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="bussiness" value="Firm">Firm</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="bussiness" value="Capital">Capital</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="bussiness" value="Fund">Fund</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="bussiness" value="Stack">Stack</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="bussiness" value="Scale">Scale</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="word"></td>
+                        <td><label for="bussiness" value="Insight">Insight</label></td>
+                    </tr>
+                </table>
+                <button id="Generate_names" onclick="genByCheck()">Generate Names</button>
+            </div>      
+        </div>
+    </div>
+    
+    <input type="text" placeholder="Custom word">
+    <button id="generate" onclick="generate()">Generate</button>
+    <p id="name"></p>
+</body>
+</html>
