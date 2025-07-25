@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faulty Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Welcome To Faulty Calculator!!</h1>
+    <button id="let_start" onclick="start()">Let's Start it</button>
+     <br><br>
+    <!-- <p id="dashboard"></p> -->
+
+    <form action="post">
+        <input type="text" placeholder="Enter the first number" id="no1" onkeyup="validation1()"> <span><p id="num1_valid"></p></span>
+          
+    <input type="text" id="op" placeholder="Enter the operation performed "> <br>
+
+    <input type="text" placeholder="Enter the second number" id="no2" onkeyup="validation2(),validop()"><span><p id="num2_valid"></p></span>
+
+    <p id="divideByZero" ></p>
+    </form>
+    
+    <button id="calc" onclick="result()">Calculate</button>
+    
+    <p id="ans"></p>
+
+    </div>
+    
+
+   
+</body>
+</html>
